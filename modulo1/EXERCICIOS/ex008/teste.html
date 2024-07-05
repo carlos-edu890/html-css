@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Tag ao Passar o Mouse</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function showTag(event, tagName) {
+            // Cria um elemento span para mostrar o nome da tag
+            let tagInfo = document.createElement('span');
+            tagInfo.textContent = 'Tag: ' + tagName;
+            tagInfo.className = 'highlight';
+            tagInfo.style.position = 'absolute';
+            tagInfo.style.backgroundColor = 'yellow';
+            tagInfo.style.border = '1px solid black';
+            tagInfo.style.padding = '2px';
+            tagInfo.style.zIndex = 1000;
+            tagInfo.id = 'tagInfo';
+
+            document.body.appendChild(tagInfo);
+
+            // Posiciona o span perto do mouse
+            tagInfo.style.left = event.pageX + 'px';
+            tagInfo.style.top = event.pageY + 'px';
+        }
+
+        function hideTag() {
+            // Remove o elemento span
+            let tagInfo = document.getElementById('tagInfo');
+            if (tagInfo) {
+                tagInfo.remove();
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Este é um texto com a tag <u onmouseover="showTag(event, 'u')" onmouseout="hideTag()">sublinhada</u>.</p>
+    <p>Este é um texto com a tag <span onmouseover="showTag(event, 'span')" onmouseout="hideTag()">span</span> usada para estilização.</p>
+    <p>Este é um texto com a tag <ins onmouseover="showTag(event, 'ins')" onmouseout="hideTag()">ins</ins> indicando inserção.</p>
+</body>
+</html>

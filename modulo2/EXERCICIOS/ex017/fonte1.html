@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes de Letras</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+
+            Medidas Relativas
+            em(tamanho), ex(altura do x), rem, vw(view port), vh(altura da view port), % e etc
+            16px geralmente = 1em
+            
+            é recomendado usar px e em
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /* tipos de pesos: lighter normal bold bolder
+            alem das numericas que vão de 100-900 */
+            font-style: italic;
+            text-decoration: underline; /* Sublinhado */
+
+            /* nem todas as fontes terão essas três últimas*/
+
+            /*
+            weight(peso) width(largura) height(altura)
+            */
+        }
+
+        h1 {
+            /*
+            font-family: "Work Sans", serif;
+            font-size: 2.5em;
+            font-weight: lighter;
+            font-style: normal;
+            
+            é possível simplificar isso tudo em uma declaração chamada: shorthand font 
+            
+            nessa ordem font-style -> font-weight -> font-size -> font-family*/
+
+            font: normal lighter 2em "Work Sans", sans-serif;
+        }
+
+        h2 {
+            font: normal bolder 1.5em "Work Sans", sans-serif;
+        }
+
+        li {
+            font-family: "Saira Semi Condensed";
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero ut vero veritatis ullam exercitationem, accusantium magni debitis pariatur nisi non alias dolorem consectetur eum soluta? Omnis praesentium reprehenderit quo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quis repellendus molestiae amet earum non placeat sunt eos voluptatem deserunt rerum voluptate mollitia est, corrupti sint, facere laboriosam delectus.</p>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae molestias necessitatibus eum commodi nisi natus, beatae, dolores quas eius ratione doloremque quia tempora fuga alias! Inventore quidem at obcaecati.</li>
+    </ul>
+
+    <h2>Sub-exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio natus labore esse dolore voluptas sit reiciendis ipsa totam neque doloremque quaerat, dolorum commodi hic aperiam laboriosam ea possimus temporibus quos?</p>
+</body>
+</html>

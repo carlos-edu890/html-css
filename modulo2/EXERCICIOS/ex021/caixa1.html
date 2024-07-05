@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            /*é possível mudar de box para inline usando display*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen;
+            */
+            border: 10px solid darkgreen;/*o de cima simplificado nesta ordem*/
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px; /*o de cima simplificado. se todos forem iguais é só botar um, se os valores forem diferentes a simplificação será nessa ordem: top right bottom left*/
+
+            margin: auto;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;
+        }
+
+        
+        .banco { /*inline-level*/
+            /*é possível mudar de inline para box usando display*/
+
+            /*e pode ter o inline-block*/
+            border-style: groove;
+            border-width: 10px;
+            border-color: lime;
+        }
+
+        .robot {
+            border-style: ridge;
+            border-width: 10px;
+            border-color: brown;
+        }
+
+        .piolho {
+            border-style: solid;
+            border-width: 9px;
+            
+            margin-top: 20PX;
+            margin-right: 1px;
+            margin-bottom: 20px;
+            margin-left: 1px;
+        }
+
+        h2 {
+            border-style: solid;
+            border-color: chocolate;
+            height: 200px;
+            width: 200px;
+            
+            margin: 20px auto 40px auto; /*centralizar*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p class="piolho">O parágrafo também é um box-level, mas os <a href="#" class="robot">links são exemplos de inline-level</a>. Vamos ver como isso funciona</p> <!-- user agent é sempre o navegador que está exibindo o seu conteúdo-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="banco">Dicta repellendus eius rerum.</a> Fuga ut tempore architecto, reiciendis ullam doloribus, nam quod reprehenderit quidem recusandae alias soluta? Culpa, iste quo. Dolores.</p>
+    <h2>SUBTITULO</h2>
+</body>
+</html>

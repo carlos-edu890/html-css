@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blueviolet;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /* sendo classe :
+           sendo elemento :: */
+
+        a::after {
+            content: ' [link]';
+            color: coral;
+        }
+
+        .especi::before {
+            content: '☭';
+        }
+
+        .alberto::marker {
+            color: yellowgreen;
+        }
+
+        p::selection {
+            color: crimson;
+            background-color: rgb(157, 117, 194);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@alanzoka" target="_blank">Canal do Alanzoka</a></li>
+        <li><a href="https://m.twitch.tv/alanzoka/home?lang=pt" target="_blank">Twich do Alanzoka</a></li>
+        <li><a href="" target="_blank" class="especi">Não sei o que do Alanzoka</a></li>
+        <li class="alberto">Vaca boa zona</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat? Accusantium dolore aperiam, provident, soluta adipisci aspernatur, atque odio mollitia veritatis excepturi quaerat sapiente doloribus libero. Quo similique ut doloremque!</p>
+    <p>House Mouse</p>
+</body>
+</html>
