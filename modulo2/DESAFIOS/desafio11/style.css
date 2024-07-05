@@ -3,21 +3,21 @@
 
 body {
     margin: 0;
+    align-items: center;
 }
 
 .fundo {
     background-image: url(https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d011/imagens/espaco.jpg?raw=true);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: 84em;
-    height: 37.6em;
+    width: 84.3em;
+    height: 37.8em;
 }
 
 .naofundo {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    transform: translate(-300%, 100%);
+    height: 15em;
     object-fit: cover;
 }
