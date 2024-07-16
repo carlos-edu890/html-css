@@ -53,6 +53,12 @@ p.milton {
     padding-bottom: 50px;
 }
 
+@media (max-width: 650px) {
+    p.milton {
+        font-size: .5em;
+    }
+}
+
 a {
     color: white;
     text-decoration: none;
