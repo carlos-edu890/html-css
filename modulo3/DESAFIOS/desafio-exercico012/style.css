@@ -72,6 +72,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 /*@media (max-width: 900px) {
     selection {
         font-size: 30px;
@@ -92,12 +96,27 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.699);
     color: white;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.466);
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('imagens/pexels-pixabay-60628.jpg');
+    background-position: center right;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/pexels-cottonbro-4778341.jpg');
+    background-position: center left;
+    background-size: cover;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 6px;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.623);
+    text-shadow: 1px 1px 0px black;
 }
 
 
