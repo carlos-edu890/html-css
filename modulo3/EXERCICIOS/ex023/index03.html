@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 7px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(110, 126, 145);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES:
+        TABLE
+            THEAD
+                TD, TH, TR
+            TBODY
+                TD, TH, TR
+            TFOOT
+                TD, TH, TR
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Unidade Federativa</th>
+                <th>Abreviação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>AC</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>AL</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>AP</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>AM</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>BA</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>CE</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>DF</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>ES</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>GO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nome</th>
+                <td>Sigla</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
