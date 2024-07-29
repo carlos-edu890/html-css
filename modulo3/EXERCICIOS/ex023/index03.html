@@ -11,7 +11,11 @@
 
         table {
             width: 400px;
-            border-collapse: collapse;
+            border-collapse: collapse; position: relative;
+        }
+
+        tbody tr:nth-child(2n) { /* even odd ou numeros */
+            background-color: lightgray;
         }
 
         td, th {
@@ -20,8 +24,19 @@
             padding: 7px;
         }
 
+        caption {
+            background-color: lightpink;
+            padding: 3px;
+        } 
+
+        thead > tr > th { /* não funciona em todos os navegadores(baseado na data do video) */
+            position: sticky;
+            top: -1px;
+            background-color: rgb(65, 71, 78);
+        }
+
         thead, tfoot {
-            background-color: rgb(110, 126, 145);
+            background-color: rgb(65, 71, 78);
         }
     </style>
 </head>
@@ -30,6 +45,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES:
         TABLE
+        CAPTION
             THEAD
                 TD, TH, TR
             TBODY
@@ -38,10 +54,11 @@
                 TD, TH, TR
     -->
     <table>
+        <caption>Siglas das Federações</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>Abreviação</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 400px;">Abreviação</th>
             </tr>
         </thead>
         <tbody>
@@ -84,8 +101,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Nome</th>
-                <td>Sigla</td>
+                <th scope="row">Nome</th>
+                <td><strong>Sigla</strong></td>
             </tr>
         </tfoot>
     </table>
